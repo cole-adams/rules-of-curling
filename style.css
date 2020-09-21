@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #000000;
+}
+
+.header {
+    font-family: "proxima-nova",Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 800;
+    background-color: transparent;
+    color: #ffffff;
+}
+.header ul{
+    list-style-type: none;
+    line-height: 50px
+}
+.header ul li{
+    padding: 20px;
+    float: right;
+}
+#titleli {
+    float: left;
+    font-size: 1.5em;
+}
+.header ul li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
