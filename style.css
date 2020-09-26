@@ -70,6 +70,7 @@ header {
 
 .card-image {
     max-width: 50%;
+    height: inherit;
     object-fit: cover;
 }
 
