@@ -4,32 +4,122 @@
 }
 
 body {
-    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
-.header {
-    font-family: "proxima-nova",Arial,sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: 800;
-    background-color: transparent;
-    color: #ffffff;
+p {
+    line-height: 1.5;
+    font-size: 18px;
 }
-.header ul{
-    list-style-type: none;
-    line-height: 50px
+
+table {
+    border-collapse: collapse;
+    width: 100%
 }
-.header ul li{
-    padding: 20px;
-    float: right;
-}
-#titleli {
-    float: left;
-    font-size: 1.5em;
-}
-.header ul li a{
-    display: inline-block;
+
+th {
+    background-color: #f44336;
     color: white;
-    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffe5e3;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+header {
+    background-image:linear-gradient(4deg, rgba(244,64,52,0.7) 15%, rgba(244,64,52,0.6) 85%),
+                    url("https://upload.wikimedia.org/wikipedia/commons/0/08/Curling_in_East_York.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+}
+
+.shadow, .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card {
+    display: flex;
+    margin: 20px;
+}
+
+.card>*:last-child {
+    margin-left: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card-content ul {
+    padding-left: 20px;
+}
+
+.card-image {
+    max-width: 50%;
+    object-fit: cover;
+}
+
+.card-table {
+    padding-top: 20px;
+}
+
+.title-text {
+    font-weight: 800;
+    color: white;
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+.header-title-section, .header-link-section{
+    align-items: center;
+    display: flex;
+    position: relative;
+    padding: 0px 20px 0px 20px;
+    height: 100px;
+}
+
+.nav-links {
+    list-style-type: none;
+    line-height: 45px;
+    align-self: flex-end;
+}
+
+.nav-links li {
+    display: inline;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav-links li:not(.selected) {
+    color: hsla(0,0%,100%,.6);
+}
+
+.nav-links li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid white;
+}
+
+.nav-links li a {
     text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.selected {
+    border-bottom: 3px solid white;
+    color: white;
 }
